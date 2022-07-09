@@ -12,7 +12,7 @@ h1 {
 }
 
 #myCanvas {
-    border-width: 10px;
+    border-width: 6px;
     border-radius: 4px;
     border-color: yellow;
     border-style: ridge;
