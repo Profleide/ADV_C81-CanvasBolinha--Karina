@@ -5,7 +5,7 @@ var ctx = canvas.getContext("2d");
 
 var cor = "red";
 
-circulo(200, 200);
+// circulo(200, 200);
 
 canvas.addEventListener("mousedown",clique);
 
