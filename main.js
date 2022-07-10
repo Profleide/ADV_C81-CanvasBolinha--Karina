@@ -11,16 +11,16 @@ canvas.addEventListener("mousedown",clique);
 
 function clique (e) {
     var novaCor = document.getElementById("cor").value;
-    console.log(novaCor);
+    // console.log(novaCor);
     if (novaCor){
         cor = novaCor;
-        console.log(cor);
+        // console.log(cor);
     }
     // console.log(e);
-    var telaX = e.offsetX;
-    var telaY = e.offsetY;
-    console.log("X = " + telaX + " | Y = " + telaY);
-    circulo (telaX, telaY);
+    var mouseX = e.offsetX;
+    var mouseY = e.offsetY;
+    console.log("X = " + mouseX + " | Y = " + mouseY);
+    circulo (mouseX, mouseY);
 }
 
 function circulo (x, y) {
