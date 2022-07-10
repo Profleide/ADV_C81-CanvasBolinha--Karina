@@ -12,12 +12,11 @@ canvas.addEventListener("mousedown",clique);
 function clique (e) {
     cor = document.getElementById("cor").value;
     console.log(cor);
-    console.log(e);
+    // console.log(e);
     var telaX = e.offsetX;
-    console.log(telaX);
     var telaY = e.offsetY;
-    console.log(telaY);
-    circulo (telaX, telaY)
+    console.log("X = " + telaX + " | Y = " + telaY);
+    circulo (telaX, telaY);
 }
 
 function circulo (x, y) {
