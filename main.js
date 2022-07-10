@@ -10,8 +10,12 @@ var cor = "red";
 canvas.addEventListener("mousedown",clique);
 
 function clique (e) {
-    cor = document.getElementById("cor").value;
-    console.log(cor);
+    var novaCor = document.getElementById("cor").value;
+    console.log(novaCor);
+    if (novaCor){
+        cor = novaCor;
+        console.log(cor);
+    }
     // console.log(e);
     var telaX = e.offsetX;
     var telaY = e.offsetY;
