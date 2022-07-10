@@ -3,11 +3,28 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-const cor = "red";
+var cor = "red";
 
-ctx.beginPath();
-ctx.strokeStyle = cor;
-ctx.lineWidth = 2;
-// arc(x,y,r,startangle,endangle) - angulos em radianos - 360° = 2PI
-ctx.arc(200, 200, 40, 0, 2*Math.PI);
-ctx.stroke();
+circulo(200, 200);
+
+canvas.addEventListener("mousedown",clique);
+
+function clique (e) {
+    cor = document.getElementById("cor").value;
+    console.log(cor);
+    console.log(e);
+    var telaX = e.offsetX;
+    console.log(telaX);
+    var telaY = e.offsetY;
+    console.log(telaY);
+    circulo (telaX, telaY)
+}
+
+function circulo (x, y) {
+    ctx.beginPath();
+    ctx.strokeStyle = cor;
+    ctx.lineWidth = 2;
+    // arc(x,y,r,startangle,endangle) - angulos em radianos - 360° = 2PI
+    ctx.arc(x, y, 40, 0, 2*Math.PI);
+    ctx.stroke();
+}
