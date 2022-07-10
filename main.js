@@ -31,3 +31,7 @@ function circulo (x, y) {
     ctx.arc(x, y, 40, 0, 2*Math.PI);
     ctx.stroke();
 }
+
+function limpar () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
