@@ -3,7 +3,6 @@ body {
     background-image: url("bg1.jpg");
     background-position: center;
     background-size: cover;
-    font-size: 20px;
 }
 
 h1 {
@@ -21,4 +20,8 @@ h1 {
 
 div {
     margin: 10px;
+}
+
+span {
+    font-size: 20px;
 }
