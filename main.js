@@ -3,6 +3,7 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
+var txtCor = document.getElementById("cor");
 var cor = "red";
 
 // circulo(200, 200);
@@ -10,12 +11,12 @@ var cor = "red";
 canvas.addEventListener("mousedown",clique);
 
 function clique (e) {
-    var novaCor = document.getElementById("cor").value;
+    // var novaCor = document.getElementById("cor").value;
     // console.log(novaCor);
-    if (novaCor){
-        cor = novaCor;
+    // if (novaCor){
+    //     cor = novaCor;
         // console.log(cor);
-    }
+    // }
     // console.log(e);
     var posicaoX = e.offsetX;
     var posicaoY = e.offsetY;
@@ -35,3 +36,8 @@ function circulo (x, y) {
 function limpar () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
+
+txtCor.addEventListener("input", function () {
+    cor = txtCor.value;
+});
+
