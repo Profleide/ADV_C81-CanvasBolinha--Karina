@@ -17,10 +17,10 @@ function clique (e) {
         // console.log(cor);
     }
     // console.log(e);
-    var mouseX = e.offsetX;
-    var mouseY = e.offsetY;
-    console.log("X = " + mouseX + " | Y = " + mouseY);
-    circulo (mouseX, mouseY);
+    var posicaoX = e.offsetX;
+    var posicaoY = e.offsetY;
+    console.log("X = " + posicaoX + " | Y = " + posicaoY);
+    circulo (posicaoX, posicaoY);
 }
 
 function circulo (x, y) {
