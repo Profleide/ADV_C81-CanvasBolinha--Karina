@@ -11,12 +11,12 @@ var cor = "red";
 canvas.addEventListener("mousedown",clique);
 
 function clique (e) {
-    // var novaCor = document.getElementById("cor").value;
-    // console.log(novaCor);
-    // if (novaCor){
-    //     cor = novaCor;
-        // console.log(cor);
-    // }
+    var novaCor = document.getElementById("cor").value;
+    console.log(novaCor);
+    if (novaCor){
+        cor = novaCor;
+        console.log(cor);
+    }
     // console.log(e);
     var posicaoX = e.offsetX;
     var posicaoY = e.offsetY;
