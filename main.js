@@ -1,9 +1,9 @@
 // Canvas refecence:
 // https://www.w3schools.com/graphics/canvas_reference.asp
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
 
-var txtCor = document.getElementById("cor");
+const txtCor = document.getElementById("cor");
 var cor = "red";
 
 // circulo(200, 200);
