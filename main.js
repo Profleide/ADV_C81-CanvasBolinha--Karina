@@ -4,7 +4,7 @@ const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 const txtCor = document.getElementById("cor");
-var cor = "red";
+var cor = "#ff0000";
 
 // circulo(200, 200);
 
